@@ -42,7 +42,7 @@ export const throttle = <T extends (...args: any[]) => any>(
   func: T,
   wait: number
 ): ((...args: Parameters<T>) => void) => {
-  let timeout: number | null = null;
+  let timeout: ReturnType<typeof setTimeout> | null = null;
   let previous = 0;
 
   return function executedFunction(...args: Parameters<T>) {
@@ -70,7 +70,7 @@ export const debounce = <T extends (...args: any[]) => any>(
   func: T,
   wait: number
 ): ((...args: Parameters<T>) => void) => {
-  let timeout: number | null = null;
+  let timeout: ReturnType<typeof setTimeout> | null = null;
 
   return function executedFunction(...args: Parameters<T>) {
     const later = () => {
