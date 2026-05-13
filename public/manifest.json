@@ -1,0 +1,26 @@
+{
+  "name": "FlowForge",
+  "short_name": "FlowForge",
+  "description": "A premium visual workflow and system architecture builder",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0f172a",
+  "background_color": "#0a0e27",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"]
+}
